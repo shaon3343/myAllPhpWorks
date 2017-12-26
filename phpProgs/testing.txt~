@@ -1,0 +1,12 @@
+INSERT INTO `shaonTest`.`Expense` (`Date`, `GoodsName`, `pricePerUnit`, `Qty`) VALUES ('2013-01-28', 'ফুলকপি', '22', '2.8');
+
+<!--  <input type="hidden" name="db" value="shaonTest" /><input type="hidden" name="table" value="Expense" /><input type="hidden" name="token" value="e717b236a1e8df15ef11746829d749a3" /><fieldset><legend xml:lang="en" dir="ltr">Language</legend> !--> 
+
+###<form method=\"post\" action=\"index.php\" target=\"_parent\">
+  
+    <select name=\"lang\" onchange=\"this.form.submit();\" xml:lang=\"en\" dir=\"ltr\">
+            <option value=\"ar\">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577; - Arabic</option>
+        <option value=\"be\">&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103; - Belarusian</option>
+        <option value=\"be@latin\">Bie&#0322;aruskaja - Belarusian latin</option>
+  </select>
+</form>";

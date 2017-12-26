@@ -1,0 +1,21 @@
+<html>
+<head> <title> inserting data </title></head>
+<body>
+<form method="POST" action="database_insert.php">
+ <br> Enter the name: </br>
+ <br>
+ <input name="name" type="text">
+ <br>	
+	Enter ID: 
+ <br>
+ 	 <input name="id" type="text">
+ <br>
+	Enter marks : 
+ <br>
+ <input name="marks" type="text">
+ <br>
+ <br>
+ <input type="submit" value="submit"> 
+</form>
+</body>
+</html>

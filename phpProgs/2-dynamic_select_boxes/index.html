@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="/phpProgs/jquery.min.js"></script>
+<script>
+function setup_country_change(){
+// If #country is changed, then call update_cities()
+$('#country').change(update_cities);
+}
+function update_cities(){
+var country=$('#country').attr('value');
+// Call get_cities.php and when retrieved,
+//call show_cities() with the result.
+$.get('get_cities.php?country='+country, show_cities);
+}
+function show_cities(res){
+// Replace contents of #cities with retrieved result
+$('#cities').html(res);
+}
+// Run setup_country_change() when the document is ready
+$(document).ready(setup_country_change);
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<th>Country</th>
+<td>
+<select name="country" id="country">
+<option value=""> -- please choose -- </option>
+<option value="ie">Ireland</option>
+<option value="uk">Great Britain</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>cities</th>
+<td id="cities">please choose a country first</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

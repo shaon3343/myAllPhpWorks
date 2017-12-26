@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/xml"; charset="utf-8" />
+<link rel = "stylesheet" type = "text/css" href = "/phpProgs/jquery-ui-1.8.13.custom.css" />
+<script type = "text/javascript" src = "/phpProgs/jquery.min.js"></script>
+<script type = "text/javascript" src = "/phpProgs/jquery-ui-1.8.13.custom.min.js"></script>
+<script type = "text/javascript">
+//<![CDATA[
+$(init);
+function init(){
+$("h1").addClass("ui-widget-header");
+$("#tabs").tabs();
+$("#datePicker").datepicker();
+$("#datePicker1").datepicker();
+$("#slider").slider()
+.bind("slide", reportSlider);
+$("#selectable").selectable();
+$("#sortable").sortable();
+$("#dialog").dialog();
+//initially close dialog
+$("#dialog").dialog("close");
+}
+
+//]]>
+</script>
+<title>AJAXtabs.html</title>
+</head>
+<body>
+<h1>UI tools</h1>
+<div id = "tabs">
+<ul>
+<li><a href ="#datePickerTab">datePicker</a></li>
+<li><a href ="#sliderTab">slider</a></li>
+<li><a href ="#selectableTab">selectable</a></li>
+<li><a href ="#sortableTab">sortable</a></li>
+<li><a href ="#dialogTab">dialog</a></li>
+</ul>
+<div id = "datePickerTab">
+<h2>date picker</h2>
+<input type = "text"
+id = "datePicker" />
+</div>
+<div id = "datePickerTab1">
+<h2>date picker</h2>
+<input type = "text"
+id = "datePicker1" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>phpMyAdmin</title>
+    <link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?server=1&amp;token=db5e571ac7a3fa2925648d2dcd9de401&amp;js_frame=right&amp;nocache=5347931208" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui-1.8.custom.css" />
+    <meta name="robots" content="noindex,nofollow" />
+<script src="./js/cross_framing_protection.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/jquery/jquery-1.4.4.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/update-location.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/functions.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/tbl_change.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/jquery/jquery-ui-1.8.custom.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/jquery/timepicker.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/jquery/jquery.qtip-1.0.0.min.js?ts=1329568005" type="text/javascript"></script>
+<script src="./js/messages.php?lang=en&amp;db=shaonTest&amp;token=db5e571ac7a3fa2925648d2dcd9de401" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+// Updates the title of the frameset if possible (ns4 does not allow this)
+if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+    && typeof(parent.document.title) == 'string') {
+    parent.document.title = 'localhost / localhost / shaonTest / Expense | phpMyAdmin 3.4.10.1deb1';
+}
+
+// ]]>
+</script>
+        <meta name="OBGZip" content="true" />
+                <!--[if IE 6]>
+        <style type="text/css">
+        /* <![CDATA[ */
+        html {
+            overflow-y: scroll;
+        }
+        /* ]]> */
+        </style>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="serverinfo">
+<a href="main.php?token=db5e571ac7a3fa2925648d2dcd9de401" class="item">        <img class="icon" src="./themes/pmahomme/img/s_host.png" width="16" height="16" alt="" /> 
+localhost</a>
+        <span class="separator"><img class="icon" src="./themes/pmahomme/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="db_structure.php?db=shaonTest&amp;token=db5e571ac7a3fa2925648d2dcd9de401" class="item">        <img class="icon" src="./themes/pmahomme/img/s_db.png" width="16" height="16" alt="" /> 
+shaonTest</a>
+        <span class="separator"><img class="icon" src="./themes/pmahomme/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="sql.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" class="item">        <img class="icon" src="./themes/pmahomme/img/s_tbl.png" width="16" height="16" alt="" /> 
+Expense</a>
+</div><div id="topmenucontainer">
+<ul id="topmenu">
+<li><a class="tab" href="sql.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401&amp;pos=0" ><img class="icon" src="./themes/pmahomme/img/b_browse.png" width="16" height="16" alt="" />Browse</a></li><li><a class="tab" href="tbl_structure.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_props.png" width="16" height="16" alt="" />Structure</a></li><li><a class="tab" href="tbl_sql.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_sql.png" width="16" height="16" alt="" />SQL</a></li><li><a class="tab" href="tbl_select.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_search.png" width="16" height="16" alt="" />Search</a></li><li class="active"><a class="tabactive" href="tbl_change.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_insrow.png" width="16" height="16" alt="" />Insert</a></li><li><a class="tab" href="tbl_export.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401&amp;single_table=true" ><img class="icon" src="./themes/pmahomme/img/b_tblexport.png" width="16" height="16" alt="" />Export</a></li><li><a class="tab" href="tbl_import.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_tblimport.png" width="16" height="16" alt="" />Import</a></li><li><a class="tab" href="tbl_operations.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/b_tblops.png" width="16" height="16" alt="" />Operations</a></li><li><a class="tab" href="tbl_tracking.php?db=shaonTest&amp;table=Expense&amp;token=db5e571ac7a3fa2925648d2dcd9de401" ><img class="icon" src="./themes/pmahomme/img/eye.png" width="16" height="16" alt="" />Tracking</a></li></ul>
+<div class="clearfloat"></div></div>
+<!-- Set on key handler for moving using by Ctrl+arrows -->
+<script src="./js/keyhandler.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var switch_movement = 0;
+document.onkeydown = onKeyDownArrowsHandler;
+//]]>
+</script>
+    
+<!-- Insert/Edit form -->
+<form id="insertForm" method="post" action="tbl_replace.php" name="insertForm"  enctype="multipart/form-data">
+<input type="hidden" name="db" value="shaonTest" /><input type="hidden" name="table" value="Expense" /><input type="hidden" name="goto" value="tbl_sql.php" /><input type="hidden" name="err_url" value="sql.php?db=shaonTest&amp;amp;table=Expense&amp;amp;token=db5e571ac7a3fa2925648d2dcd9de401" /><input type="hidden" name="sql_query" value="" /><input type="hidden" name="token" value="db5e571ac7a3fa2925648d2dcd9de401" />    <table class="insertRowTable">
+    <thead>
+        <tr>
+            <th>Column</th>
+
+           <th><a href="tbl_change.php?db=shaonTest&amp;table=Expense&amp;ShowFieldTypesInDataEditView=0&amp;ShowFunctionFields=1&amp;goto=sql.php&amp;token=db5e571ac7a3fa2925648d2dcd9de401" title="Hide">Type</a></th>
+          <th><a href="tbl_change.php?db=shaonTest&amp;table=Expense&amp;ShowFunctionFields=0&amp;ShowFieldTypesInDataEditView=1&amp;goto=sql.php&amp;token=db5e571ac7a3fa2925648d2dcd9de401" title="Hide">Function</a></th>
+            <th>Null</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th colspan="5" align="right" class="tblFooters">
+                <input type="submit" value="Go" />
+            </th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr class="noclick odd">
+           
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][0][44749712dbec183e983dcd78a7736c41]"
+                    value="" size="10"
+                    class="textfield datefield" onchange="return verificationsAfterFieldChange('44749712dbec183e983dcd78a7736c41', '0','date')"                    tabindex="1"
+                    id="field_1_3" />
+                            </td>
+        </tr>
+                <tr class="noclick even">
+            <td  align="center">
+                GoodsName                <input type="hidden" name="fields_name[multi_edit][0][6cad8c0195789f93748d6d1a7bed680e]" value="GoodsName"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">varchar(30)</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][0][6cad8c0195789f93748d6d1a7bed680e]" onchange="return verificationsAfterFieldChange('6cad8c0195789f93748d6d1a7bed680e', '0','varchar(30)')" tabindex="3002" id="field_2_1">
+                    <option></option>
+                <option>BIN</option>
+<option>CHAR</option>
+<option>CURRENT_USER</option>
+<option>COMPRESS</option>
+<option>DAYNAME</option>
+<option>DES_DECRYPT</option>
+<option>DES_ENCRYPT</option>
+<option>ENCRYPT</option>
+<option>HEX</option>
+<option>INET_NTOA</option>
+<option>LOWER</option>
+<option>MD5</option>
+<option>OLD_PASSWORD</option>
+<option>PASSWORD</option>
+<option>REVERSE</option>
+<option>SHA1</option>
+<option>SOUNDEX</option>
+<option>SPACE</option>
+<option>UNCOMPRESS</option>
+<option>UNHEX</option>
+<option>UPPER</option>
+<option>USER</option>
+<option>UUID</option>
+                <option value="">--------</option>
+                <option>ABS</option>
+                <option>ACOS</option>
+                <option>ASCII</option>
+                <option>ASIN</option>
+                <option>ATAN</option>
+                <option>BIT_COUNT</option>
+                <option>BIT_LENGTH</option>
+                <option>CEILING</option>
+                <option>CHAR_LENGTH</option>
+                <option>COS</option>
+                <option>COT</option>
+                <option>CRC32</option>
+                <option>CURDATE</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DEGREES</option>
+                <option>EXP</option>
+                <option>FLOOR</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>INET_ATON</option>
+                <option>LENGTH</option>
+                <option>LN</option>
+                <option>LOG</option>
+                <option>LOG10</option>
+                <option>LOG2</option>
+                <option>NOW</option>
+                <option>OCT</option>
+                <option>ORD</option>
+                <option>RADIANS</option>
+                <option>RAND</option>
+                <option>ROUND</option>
+                <option>SEC_TO_TIME</option>
+                <option>SQRT</option>
+                <option>STDDEV_POP</option>
+                <option>STDDEV_SAMP</option>
+                <option>TAN</option>
+                <option>TIMESTAMP</option>
+                <option>TIME_TO_SEC</option>
+                <option>UNIX_TIMESTAMP</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>VAR_POP</option>
+                <option>VAR_SAMP</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+            <input type="hidden" name="fields_type[multi_edit][0][6cad8c0195789f93748d6d1a7bed680e]"
+                value="foreign" />
+            <select name="fields[multi_edit][0][6cad8c0195789f93748d6d1a7bed680e]"
+                onchange="return verificationsAfterFieldChange('6cad8c0195789f93748d6d1a7bed680e', '0','varchar(30)')"                class="textfield"
+                tabindex="2"
+                id="field_2_3">
+                <option value="">&nbsp;</option><option value="" selected="selected"></option><option value="আটা">আটা</option><option value="আদা">আদা</option><option value="আলু">আলু</option><option value="ইলিশ মাছ">ইলিশ মাছ</option><option value="কচু">কচু</option><option value="কপি শাক">কপি শাক</option><option value="কাচামরিচ">কাচামরিচ</option><option value="কুমড়া">কুমড়া</option><option value="গুড়ো দুধ">গুড়ো দুধ</option><option value="চা">চা</option><option value="চা পাতা">চা পাতা</option><option value="চিনি">চিনি</option><option value="ছুরি শুটকি">ছুরি শুটকি</option><option value="টমেটো">টমেটো</option><option value="ডাল">ডাল</option><option value="ডিম">ডিম</option><option value="তেলাপিয়া মাছ">তেলাপিয়া মাছ</option><option value="ধনে পাতা">ধনে পাতা</option><option value="নুডলস">নুডলস</option><option value="পটল">পটল</option><option value="পালং শাক">পালং শাক</option><option value="পিয়াজ">পিয়াজ</option><option value="ফুলকপি">ফুলকপি</option><option value="বাধাকপি">বাধাকপি</option><option value="মটর ডাল">মটর ডাল</option><option value="মরিচ">মরিচ</option><option value="মসুর ডাল">মসুর ডাল</option><option value="মুলা">মুলা</option><option value="ময়দা ">ময়দা </option><option value="রসুন">রসুন</option><option value="রুই মাছ">রুই মাছ</option><option value="লবণ">লবণ</option><option value="লাউ">লাউ</option><option value="শসা">শসা</option><option value="শালগম">শালগম</option><option value="সাবান">সাবান</option><option value="সয়াবিন তেল">সয়াবিন তেল</option>            </select>
+                        </td>
+        </tr>
+                <tr class="noclick odd">
+            <td  align="center">
+                pricePerUnit                <input type="hidden" name="fields_name[multi_edit][0][e673af7ca9b50444a8c1d0c0e4ebf79d]" value="pricePerUnit"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">float</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][0][e673af7ca9b50444a8c1d0c0e4ebf79d]" onchange="return verificationsAfterFieldChange('e673af7ca9b50444a8c1d0c0e4ebf79d', '0','float')" tabindex="3003" id="field_3_1">
+                    <option></option>
+                <option>ABS</option>
+<option>ACOS</option>
+<option>ASCII</option>
+<option>ASIN</option>
+<option>ATAN</option>
+<option>BIT_LENGTH</option>
+<option>BIT_COUNT</option>
+<option>CEILING</option>
+<option>CHAR_LENGTH</option>
+<option>COS</option>
+<option>COT</option>
+<option>CRC32</option>
+<option>DEGREES</option>
+<option>EXP</option>
+<option>FLOOR</option>
+<option>INET_ATON</option>
+<option>LENGTH</option>
+<option>LN</option>
+<option>LOG</option>
+<option>LOG2</option>
+<option>LOG10</option>
+<option>OCT</option>
+<option>ORD</option>
+<option>RADIANS</option>
+<option>RAND</option>
+<option>ROUND</option>
+<option>SQRT</option>
+<option>STDDEV_POP</option>
+<option>STDDEV_SAMP</option>
+<option>TAN</option>
+<option>TIME_TO_SEC</option>
+<option>UNIX_TIMESTAMP</option>
+<option>VAR_POP</option>
+<option>VAR_SAMP</option>
+                <option value="">--------</option>
+                <option>BIN</option>
+                <option>CHAR</option>
+                <option>COMPRESS</option>
+                <option>CURDATE</option>
+                <option>CURRENT_USER</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DAYNAME</option>
+                <option>DES_DECRYPT</option>
+                <option>DES_ENCRYPT</option>
+                <option>ENCRYPT</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>HEX</option>
+                <option>INET_NTOA</option>
+                <option>LOWER</option>
+                <option>MD5</option>
+                <option>NOW</option>
+                <option>OLD_PASSWORD</option>
+                <option>PASSWORD</option>
+                <option>REVERSE</option>
+                <option>SEC_TO_TIME</option>
+                <option>SHA1</option>
+                <option>SOUNDEX</option>
+                <option>SPACE</option>
+                <option>TIMESTAMP</option>
+                <option>UNCOMPRESS</option>
+                <option>UNHEX</option>
+                <option>UPPER</option>
+                <option>USER</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>UUID</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][0][e673af7ca9b50444a8c1d0c0e4ebf79d]"
+                    value="" size="40"
+                    class="textfield" onchange="return verificationsAfterFieldChange('e673af7ca9b50444a8c1d0c0e4ebf79d', '0','float')"                    tabindex="3"
+                    id="field_3_3" />
+                            </td>
+        </tr>
+                <tr class="noclick even">
+            <td  align="center">
+                Qty                <input type="hidden" name="fields_name[multi_edit][0][03ab340b3f99e03cff9e84314ead38c0]" value="Qty"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">float</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][0][03ab340b3f99e03cff9e84314ead38c0]" onchange="return verificationsAfterFieldChange('03ab340b3f99e03cff9e84314ead38c0', '0','float')" tabindex="3004" id="field_4_1">
+                    <option></option>
+                <option>ABS</option>
+<option>ACOS</option>
+<option>ASCII</option>
+<option>ASIN</option>
+<option>ATAN</option>
+<option>BIT_LENGTH</option>
+<option>BIT_COUNT</option>
+<option>CEILING</option>
+<option>CHAR_LENGTH</option>
+<option>COS</option>
+<option>COT</option>
+<option>CRC32</option>
+<option>DEGREES</option>
+<option>EXP</option>
+<option>FLOOR</option>
+<option>INET_ATON</option>
+<option>LENGTH</option>
+<option>LN</option>
+<option>LOG</option>
+<option>LOG2</option>
+<option>LOG10</option>
+<option>OCT</option>
+<option>ORD</option>
+<option>RADIANS</option>
+<option>RAND</option>
+<option>ROUND</option>
+<option>SQRT</option>
+<option>STDDEV_POP</option>
+<option>STDDEV_SAMP</option>
+<option>TAN</option>
+<option>TIME_TO_SEC</option>
+<option>UNIX_TIMESTAMP</option>
+<option>VAR_POP</option>
+<option>VAR_SAMP</option>
+                <option value="">--------</option>
+                <option>BIN</option>
+                <option>CHAR</option>
+                <option>COMPRESS</option>
+                <option>CURDATE</option>
+                <option>CURRENT_USER</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DAYNAME</option>
+                <option>DES_DECRYPT</option>
+                <option>DES_ENCRYPT</option>
+                <option>ENCRYPT</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>HEX</option>
+                <option>INET_NTOA</option>
+                <option>LOWER</option>
+                <option>MD5</option>
+                <option>NOW</option>
+                <option>OLD_PASSWORD</option>
+                <option>PASSWORD</option>
+                <option>REVERSE</option>
+                <option>SEC_TO_TIME</option>
+                <option>SHA1</option>
+                <option>SOUNDEX</option>
+                <option>SPACE</option>
+                <option>TIMESTAMP</option>
+                <option>UNCOMPRESS</option>
+                <option>UNHEX</option>
+                <option>UPPER</option>
+                <option>USER</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>UUID</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][0][03ab340b3f99e03cff9e84314ead38c0]"
+                    value="" size="40"
+                    class="textfield" onchange="return verificationsAfterFieldChange('03ab340b3f99e03cff9e84314ead38c0', '0','float')"                    tabindex="4"
+                    id="field_4_3" />
+                            </td>
+        </tr>
+          </tbody></table><br /><input type="checkbox" checked="checked" name="insert_ignore_1" id="insert_ignore_1" /><label for="insert_ignore_1">Ignore</label><br />
+    <table class="insertRowTable">
+    <thead>
+        <tr>
+            <th>Column</th>
+
+           <th><a href="tbl_change.php?db=shaonTest&amp;table=Expense&amp;ShowFieldTypesInDataEditView=0&amp;ShowFunctionFields=1&amp;goto=sql.php&amp;token=db5e571ac7a3fa2925648d2dcd9de401" title="Hide">Type</a></th>
+          <th><a href="tbl_change.php?db=shaonTest&amp;table=Expense&amp;ShowFunctionFields=0&amp;ShowFieldTypesInDataEditView=1&amp;goto=sql.php&amp;token=db5e571ac7a3fa2925648d2dcd9de401" title="Hide">Function</a></th>
+            <th>Null</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th colspan="5" align="right" class="tblFooters">
+                <input type="submit" value="Go" />
+            </th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr class="noclick odd">
+            <td  align="center">
+                Date                <input type="hidden" name="fields_name[multi_edit][1][44749712dbec183e983dcd78a7736c41]" value="Date"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">date</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][1][44749712dbec183e983dcd78a7736c41]" onchange="return verificationsAfterFieldChange('44749712dbec183e983dcd78a7736c41', '1','date')" tabindex="3005" id="field_5_1">
+                    <option></option>
+                <option>CURDATE</option>
+<option>CURTIME</option>
+<option>DATE</option>
+<option>FROM_DAYS</option>
+<option>FROM_UNIXTIME</option>
+<option>NOW</option>
+<option>SEC_TO_TIME</option>
+<option>TIMESTAMP</option>
+<option>UTC_DATE</option>
+<option>UTC_TIME</option>
+<option>UTC_TIMESTAMP</option>
+<option>YEAR</option>
+                <option value="">--------</option>
+                <option>ABS</option>
+                <option>ACOS</option>
+                <option>ASCII</option>
+                <option>ASIN</option>
+                <option>ATAN</option>
+                <option>BIN</option>
+                <option>BIT_COUNT</option>
+                <option>BIT_LENGTH</option>
+                <option>CEILING</option>
+                <option>CHAR</option>
+                <option>CHAR_LENGTH</option>
+                <option>COMPRESS</option>
+                <option>COS</option>
+                <option>COT</option>
+                <option>CRC32</option>
+                <option>CURRENT_USER</option>
+                <option>DAYNAME</option>
+                <option>DEGREES</option>
+                <option>DES_DECRYPT</option>
+                <option>DES_ENCRYPT</option>
+                <option>ENCRYPT</option>
+                <option>EXP</option>
+                <option>FLOOR</option>
+                <option>HEX</option>
+                <option>INET_ATON</option>
+                <option>INET_NTOA</option>
+                <option>LENGTH</option>
+                <option>LN</option>
+                <option>LOG</option>
+                <option>LOG10</option>
+                <option>LOG2</option>
+                <option>LOWER</option>
+                <option>MD5</option>
+                <option>OCT</option>
+                <option>OLD_PASSWORD</option>
+                <option>ORD</option>
+                <option>PASSWORD</option>
+                <option>RADIANS</option>
+                <option>RAND</option>
+                <option>REVERSE</option>
+                <option>ROUND</option>
+                <option>SHA1</option>
+                <option>SOUNDEX</option>
+                <option>SPACE</option>
+                <option>SQRT</option>
+                <option>STDDEV_POP</option>
+                <option>STDDEV_SAMP</option>
+                <option>TAN</option>
+                <option>TIME_TO_SEC</option>
+                <option>UNCOMPRESS</option>
+                <option>UNHEX</option>
+                <option>UNIX_TIMESTAMP</option>
+                <option>UPPER</option>
+                <option>USER</option>
+                <option>UUID</option>
+                <option>VAR_POP</option>
+                <option>VAR_SAMP</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][1][44749712dbec183e983dcd78a7736c41]"
+                    value="" size="10"
+                    class="textfield datefield" onchange="return verificationsAfterFieldChange('44749712dbec183e983dcd78a7736c41', '1','date')"                    tabindex="5"
+                    id="field_5_3" />
+                            </td>
+        </tr>
+                <tr class="noclick even">
+            <td  align="center">
+                GoodsName                <input type="hidden" name="fields_name[multi_edit][1][6cad8c0195789f93748d6d1a7bed680e]" value="GoodsName"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">varchar(30)</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][1][6cad8c0195789f93748d6d1a7bed680e]" onchange="return verificationsAfterFieldChange('6cad8c0195789f93748d6d1a7bed680e', '1','varchar(30)')" tabindex="3006" id="field_6_1">
+                    <option></option>
+                <option>BIN</option>
+<option>CHAR</option>
+<option>CURRENT_USER</option>
+<option>COMPRESS</option>
+<option>DAYNAME</option>
+<option>DES_DECRYPT</option>
+<option>DES_ENCRYPT</option>
+<option>ENCRYPT</option>
+<option>HEX</option>
+<option>INET_NTOA</option>
+<option>LOWER</option>
+<option>MD5</option>
+<option>OLD_PASSWORD</option>
+<option>PASSWORD</option>
+<option>REVERSE</option>
+<option>SHA1</option>
+<option>SOUNDEX</option>
+<option>SPACE</option>
+<option>UNCOMPRESS</option>
+<option>UNHEX</option>
+<option>UPPER</option>
+<option>USER</option>
+<option>UUID</option>
+                <option value="">--------</option>
+                <option>ABS</option>
+                <option>ACOS</option>
+                <option>ASCII</option>
+                <option>ASIN</option>
+                <option>ATAN</option>
+                <option>BIT_COUNT</option>
+                <option>BIT_LENGTH</option>
+                <option>CEILING</option>
+                <option>CHAR_LENGTH</option>
+                <option>COS</option>
+                <option>COT</option>
+                <option>CRC32</option>
+                <option>CURDATE</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DEGREES</option>
+                <option>EXP</option>
+                <option>FLOOR</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>INET_ATON</option>
+                <option>LENGTH</option>
+                <option>LN</option>
+                <option>LOG</option>
+                <option>LOG10</option>
+                <option>LOG2</option>
+                <option>NOW</option>
+                <option>OCT</option>
+                <option>ORD</option>
+                <option>RADIANS</option>
+                <option>RAND</option>
+                <option>ROUND</option>
+                <option>SEC_TO_TIME</option>
+                <option>SQRT</option>
+                <option>STDDEV_POP</option>
+                <option>STDDEV_SAMP</option>
+                <option>TAN</option>
+                <option>TIMESTAMP</option>
+                <option>TIME_TO_SEC</option>
+                <option>UNIX_TIMESTAMP</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>VAR_POP</option>
+                <option>VAR_SAMP</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+            <input type="hidden" name="fields_type[multi_edit][1][6cad8c0195789f93748d6d1a7bed680e]"
+                value="foreign" />
+            <select name="fields[multi_edit][1][6cad8c0195789f93748d6d1a7bed680e]"
+                onchange="return verificationsAfterFieldChange('6cad8c0195789f93748d6d1a7bed680e', '1','varchar(30)')"                class="textfield"
+                tabindex="6"
+                id="field_6_3">
+                <option value="">&nbsp;</option><option value="" selected="selected"></option><option value="আটা">আটা</option><option value="আদা">আদা</option><option value="আলু">আলু</option><option value="ইলিশ মাছ">ইলিশ মাছ</option><option value="কচু">কচু</option><option value="কপি শাক">কপি শাক</option><option value="কাচামরিচ">কাচামরিচ</option><option value="কুমড়া">কুমড়া</option><option value="গুড়ো দুধ">গুড়ো দুধ</option><option value="চা">চা</option><option value="চা পাতা">চা পাতা</option><option value="চিনি">চিনি</option><option value="ছুরি শুটকি">ছুরি শুটকি</option><option value="টমেটো">টমেটো</option><option value="ডাল">ডাল</option><option value="ডিম">ডিম</option><option value="তেলাপিয়া মাছ">তেলাপিয়া মাছ</option><option value="ধনে পাতা">ধনে পাতা</option><option value="নুডলস">নুডলস</option><option value="পটল">পটল</option><option value="পালং শাক">পালং শাক</option><option value="পিয়াজ">পিয়াজ</option><option value="ফুলকপি">ফুলকপি</option><option value="বাধাকপি">বাধাকপি</option><option value="মটর ডাল">মটর ডাল</option><option value="মরিচ">মরিচ</option><option value="মসুর ডাল">মসুর ডাল</option><option value="মুলা">মুলা</option><option value="ময়দা ">ময়দা </option><option value="রসুন">রসুন</option><option value="রুই মাছ">রুই মাছ</option><option value="লবণ">লবণ</option><option value="লাউ">লাউ</option><option value="শসা">শসা</option><option value="শালগম">শালগম</option><option value="সাবান">সাবান</option><option value="সয়াবিন তেল">সয়াবিন তেল</option>            </select>
+                        </td>
+        </tr>
+                <tr class="noclick odd">
+            <td  align="center">
+                pricePerUnit                <input type="hidden" name="fields_name[multi_edit][1][e673af7ca9b50444a8c1d0c0e4ebf79d]" value="pricePerUnit"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">float</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][1][e673af7ca9b50444a8c1d0c0e4ebf79d]" onchange="return verificationsAfterFieldChange('e673af7ca9b50444a8c1d0c0e4ebf79d', '1','float')" tabindex="3007" id="field_7_1">
+                    <option></option>
+                <option>ABS</option>
+<option>ACOS</option>
+<option>ASCII</option>
+<option>ASIN</option>
+<option>ATAN</option>
+<option>BIT_LENGTH</option>
+<option>BIT_COUNT</option>
+<option>CEILING</option>
+<option>CHAR_LENGTH</option>
+<option>COS</option>
+<option>COT</option>
+<option>CRC32</option>
+<option>DEGREES</option>
+<option>EXP</option>
+<option>FLOOR</option>
+<option>INET_ATON</option>
+<option>LENGTH</option>
+<option>LN</option>
+<option>LOG</option>
+<option>LOG2</option>
+<option>LOG10</option>
+<option>OCT</option>
+<option>ORD</option>
+<option>RADIANS</option>
+<option>RAND</option>
+<option>ROUND</option>
+<option>SQRT</option>
+<option>STDDEV_POP</option>
+<option>STDDEV_SAMP</option>
+<option>TAN</option>
+<option>TIME_TO_SEC</option>
+<option>UNIX_TIMESTAMP</option>
+<option>VAR_POP</option>
+<option>VAR_SAMP</option>
+                <option value="">--------</option>
+                <option>BIN</option>
+                <option>CHAR</option>
+                <option>COMPRESS</option>
+                <option>CURDATE</option>
+                <option>CURRENT_USER</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DAYNAME</option>
+                <option>DES_DECRYPT</option>
+                <option>DES_ENCRYPT</option>
+                <option>ENCRYPT</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>HEX</option>
+                <option>INET_NTOA</option>
+                <option>LOWER</option>
+                <option>MD5</option>
+                <option>NOW</option>
+                <option>OLD_PASSWORD</option>
+                <option>PASSWORD</option>
+                <option>REVERSE</option>
+                <option>SEC_TO_TIME</option>
+                <option>SHA1</option>
+                <option>SOUNDEX</option>
+                <option>SPACE</option>
+                <option>TIMESTAMP</option>
+                <option>UNCOMPRESS</option>
+                <option>UNHEX</option>
+                <option>UPPER</option>
+                <option>USER</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>UUID</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][1][e673af7ca9b50444a8c1d0c0e4ebf79d]"
+                    value="" size="40"
+                    class="textfield" onchange="return verificationsAfterFieldChange('e673af7ca9b50444a8c1d0c0e4ebf79d', '1','float')"                    tabindex="7"
+                    id="field_7_3" />
+                            </td>
+        </tr>
+                <tr class="noclick even">
+            <td  align="center">
+                Qty                <input type="hidden" name="fields_name[multi_edit][1][03ab340b3f99e03cff9e84314ead38c0]" value="Qty"/>
+            </td>
+             <td align="center" nowrap="nowrap"><span class="column_type">float</span>
+             </td>
+
+                     <td>
+                <select name="funcs[multi_edit][1][03ab340b3f99e03cff9e84314ead38c0]" onchange="return verificationsAfterFieldChange('03ab340b3f99e03cff9e84314ead38c0', '1','float')" tabindex="3008" id="field_8_1">
+                    <option></option>
+                <option>ABS</option>
+<option>ACOS</option>
+<option>ASCII</option>
+<option>ASIN</option>
+<option>ATAN</option>
+<option>BIT_LENGTH</option>
+<option>BIT_COUNT</option>
+<option>CEILING</option>
+<option>CHAR_LENGTH</option>
+<option>COS</option>
+<option>COT</option>
+<option>CRC32</option>
+<option>DEGREES</option>
+<option>EXP</option>
+<option>FLOOR</option>
+<option>INET_ATON</option>
+<option>LENGTH</option>
+<option>LN</option>
+<option>LOG</option>
+<option>LOG2</option>
+<option>LOG10</option>
+<option>OCT</option>
+<option>ORD</option>
+<option>RADIANS</option>
+<option>RAND</option>
+<option>ROUND</option>
+<option>SQRT</option>
+<option>STDDEV_POP</option>
+<option>STDDEV_SAMP</option>
+<option>TAN</option>
+<option>TIME_TO_SEC</option>
+<option>UNIX_TIMESTAMP</option>
+<option>VAR_POP</option>
+<option>VAR_SAMP</option>
+                <option value="">--------</option>
+                <option>BIN</option>
+                <option>CHAR</option>
+                <option>COMPRESS</option>
+                <option>CURDATE</option>
+                <option>CURRENT_USER</option>
+                <option>CURTIME</option>
+                <option>DATE</option>
+                <option>DAYNAME</option>
+                <option>DES_DECRYPT</option>
+                <option>DES_ENCRYPT</option>
+                <option>ENCRYPT</option>
+                <option>FROM_DAYS</option>
+                <option>FROM_UNIXTIME</option>
+                <option>HEX</option>
+                <option>INET_NTOA</option>
+                <option>LOWER</option>
+                <option>MD5</option>
+                <option>NOW</option>
+                <option>OLD_PASSWORD</option>
+                <option>PASSWORD</option>
+                <option>REVERSE</option>
+                <option>SEC_TO_TIME</option>
+                <option>SHA1</option>
+                <option>SOUNDEX</option>
+                <option>SPACE</option>
+                <option>TIMESTAMP</option>
+                <option>UNCOMPRESS</option>
+                <option>UNHEX</option>
+                <option>UPPER</option>
+                <option>USER</option>
+                <option>UTC_DATE</option>
+                <option>UTC_TIME</option>
+                <option>UTC_TIMESTAMP</option>
+                <option>UUID</option>
+                <option>YEAR</option>
+                </select>
+            </td>
+                        <td>
+        </td>
+        <td>
+<span class="default_value hide"></span>
+                <input type="text" name="fields[multi_edit][1][03ab340b3f99e03cff9e84314ead38c0]"
+                    value="" size="40"
+                    class="textfield" onchange="return verificationsAfterFieldChange('03ab340b3f99e03cff9e84314ead38c0', '1','float')"                    tabindex="8"
+                    id="field_8_3" />
+                            </td>
+        </tr>
+          </tbody></table><br />    <br />
+
+    <fieldset id="actions_panel">
+    <table border="0" cellpadding="5" cellspacing="0">
+    <tr>
+        <td valign="middle" nowrap="nowrap">
+            <select name="submit_type" class="control_at_footer" tabindex="9">
+                <option value="insert">Insert as new row</option>
+                <option value="insertignore">Insert as new row and ignore errors</option>
+                <option value="showinsert">Show insert query</option>
+            </select>
+    
+        </td>
+        <td valign="middle">
+            &nbsp;&nbsp;&nbsp;<strong>and then</strong>&nbsp;&nbsp;&nbsp;
+        </td>
+        <td valign="middle" nowrap="nowrap">
+            <select name="after_insert">
+                <option value="back" selected="selected">Go back to previous page</option>
+                <option value="new_insert" >Insert another new row</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+<sup class="footnotemarker">1</sup><img class="footnotemarker" id="footnote_1_1" src="./themes/pmahomme/img/b_help.png" alt="" />        </td>
+        <td colspan="3" align="right" valign="middle">
+            <input type="submit" class="control_at_footer" value="Go" tabindex="14" id="buttonYes" />
+            <input type="reset" class="control_at_footer" value="Reset" tabindex="15" />
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+    </form>
+<!-- Continue insertion form -->
+<form id="continueForm" method="post" action="tbl_replace.php" name="continueForm" >
+    <input type="hidden" name="db" value="shaonTest" /><input type="hidden" name="table" value="Expense" /><input type="hidden" name="token" value="db5e571ac7a3fa2925648d2dcd9de401" />    <input type="hidden" name="goto" value="tbl_sql.php" />
+    <input type="hidden" name="err_url" value="sql.php?db=shaonTest&amp;amp;table=Expense&amp;amp;token=db5e571ac7a3fa2925648d2dcd9de401" />
+    <input type="hidden" name="sql_query" value="" />
+
+Continue insertion with <select name="insert_rows" id="insert_rows">
+<option value="1">1</option>
+<option value="2" selected="selected">2</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="40">40</option>
+</select>
+ rows<noscript><input type="submit" value="Go" /></noscript>
+</form>
+<div class="footnotes"><span id="footnote_1"><sup>1</sup> Use TAB key to move from value to value, or CTRL+arrows to move anywhere</span><br /></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en', 'utf8_general_ci', '1', 'shaonTest', 'Expense', 'db5e571ac7a3fa2925648d2dcd9de401');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'shaonTest',
+        'Expense',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+});
+
+//]]>
+</script>
+<div id="selflink" class="print_ignore">
+<script type="text/javascript">
+//<![CDATA[
+
+/* Store current location in hash part of URL to allow direct bookmarking */
+setURLHash("db=shaonTest&table=Expense&target=tbl_change.php&token=db5e571ac7a3fa2925648d2dcd9de401");
+
+//]]>
+</script>
+<a href="index.php?db=shaonTest&amp;table=Expense&amp;target=tbl_change.php&amp;token=db5e571ac7a3fa2925648d2dcd9de401" title="Open new phpMyAdmin window" target="_blank"><img class="icon" src="./themes/pmahomme/img/window-new.png" alt="Open new phpMyAdmin window" /></a>
+</div>
+</body>
+</html>
+

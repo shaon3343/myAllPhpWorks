@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/xml"; charset="utf-8" />
+<link rel = "stylesheet" type = "text/css" href = "/phpProgs/jquery-ui-1.8.13.custom.css" />
+<script type = "text/javascript" src = "/phpProgs/jquery.min.js"></script>
+<script type = "text/javascript" src = "/phpProgs/jquery-ui-1.8.13.custom.min.js"></script>
+<script type = "text/javascript">
+//<![CDATA[
+$(init);
+function init(){
+$("h1").addClass("ui-widget-header");
+$("#tabs").tabs();
+}
+
+//]]>
+</script>
+<title>খরচের হিসাব </title>
+</head>
+<body>
+<h1>খরচের খেরো-খাতাঃ </h1>
+<div id = "tabs">
+<ul>
+<li><a href ="http://localhost/phpProgs/ComputeExpense.php">লিষ্টি বানানঃ </a></li>
+<li><a href ="http://localhost/phpProgs/insertGoods.php">নতুন পন্য ডাটাবেজে রাখুন </a></li>
+<li><a href ="http://localhost/phpProgs/showExpense.php">খরচের হিসাব নিকাশ দেখুনঃ</a></li>
+</ul>
+</body>
+</html>
